@@ -1,0 +1,238 @@
+.container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*手机头部*/
+.header_shouji{
+	height: 50px;
+	background: #222;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;    right: 0;   left: 0;
+}
+
+.header_shouji a{
+	color: #999;
+	font-size:18px;
+	line-height: 50px; 
+}
+.header_shouji a:hover{
+	color: #ccc;
+}
+.header_shouji .xiala{
+	width: 35px;   height: 35px;
+	float: right;
+	margin-top: 7.5px;
+	color: #fff;
+	border: 1px solid #333;
+	cursor: pointer;
+}
+.line{
+	height: 0;   border-top: 1px solid #101010;
+	border-bottom: 1px solid #393939;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 5px;
+}
+.header_shouji .xiala form input{
+	border: 2px solid black;
+	box-sizing: border-box;
+	height: 37px;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+.header_shouji .xiala form :nth-child(3){
+	width: 100%;
+	margin-top: 3px;
+}
+.header_shouji .xiala form :nth-child(4){
+	width: 100%;
+	margin-top: 3px;
+}
+.header_shouji .xiala form :nth-child(5){
+	width: 72px;
+	float: left;
+	background:#5CB85C;
+	margin-top: 3px;
+	cursor: pointer;
+}
+.header_shouji .xiala form :nth-child(5):hover{
+	opacity:0.8;
+}
+.header_shouji .xiala form{
+	height: 0;
+	position: absolute;
+	top: 50px;   left: 0px;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	background: #222;
+	width: 100%;
+	overflow: hidden;
+	transition: height 1s;
+}
+.xiala:hover .xiala1{
+	height: 140px;
+}
+.header_shouji .xiala:hover{
+	background: #666!important;
+}
+.header_pc{
+	height: 50px;
+	background: #222;
+	padding-right: 15px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	position: relative;
+	display: none;
+}
+
+/*pc头部*/
+.header_pc{
+	position: fixed;
+	top: 0;    right: 0;   left: 0;
+}
+.header_pc a{
+	color: #999;
+	font-size:18px;
+	line-height: 50px; 
+}
+.header_pc a:hover{
+	color: #ccc;
+}
+.header_pc form input{
+	border: 2px solid black;
+	box-sizing: border-box;
+	height: 37px;
+	border-radius: 5px;
+	padding-left: 10px;
+	
+}
+.header_pc form :nth-child(1){
+	width: 200px;
+	margin-top: 3px;
+}
+.header_pc form :nth-child(2){
+	width: 200px;
+	margin-top: 3px;
+}
+.header_pc form :nth-child(3){
+	width: 72px;
+	background:#5CB85C;
+	margin-top: 3px;
+	cursor: pointer;
+}
+.header_pc form :nth-child(3):hover{
+	opacity:0.8;
+}
+
+/*banner部分*/
+.banner{
+	width: 100%;
+	background: #EEEEEE;
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 50px;
+}
+.banner div p{
+	font-size: 18px;
+	margin-top: 5px;
+}
+.banner div button{
+	margin-top: 20px;
+	background: #286090;
+	border-radius: 5px;
+	width: 142px;   height: 47px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+.banner div button:hover{
+	background: rgba(28,30,90,0.7);
+}
+
+/*内容*/
+.neirong{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+}
+.neirong .container p{
+	font-size: 14px;
+	margin-top: 10px;
+	word-break: break-all;
+}
+.neirong .container button{
+	background: #fff;
+	border-radius: 5px;
+	width: 110px;   height: 30px;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #999;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.neirong .container button:hover{
+	background: #ccc;
+}
+
+/*长线*/
+.changxian{
+	height: 2px;
+	background: #ccc;
+	margin-top: 50px;
+}
+
+/*最底部*/
+.dibu{
+	margin-top: 30px;
+}
+/*响应式*/
+@media screen and (min-width: 768px){
+	.header_shouji{
+		display: none;
+	}
+	.header_pc{
+		display: block;
+	}
+	.container{
+	width: 750px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.header_pc{
+		
+	}
+	.container{
+	width: 970px;
+	}
+	.neirong .wenzhang{
+		width: 33.33333%;
+		float: left;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.banner .container h1{
+		font-size: 50px;
+	}
+	.container{
+	width: 1170px;
+	}
+}

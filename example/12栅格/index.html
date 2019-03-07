@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="index.css">
+	<title>十二栅格bootstarp</title>
+	<style>
+		body{
+			margin:0px;
+		}
+		.a{
+			background: #373277
+		}
+		.a1{
+			background: #666;
+			height: 300px;
+		}
+		.a2{
+			background: #ddd;
+			height: 300px;
+		}
+		.four div{
+			height: 100px;
+			box-sizing: border-box;
+			border: 1px solid #999;
+		}
+		.users{
+			background: #ddd;
+		}
+		.user{
+			height: 200px;
+			box-sizing: border-box;
+			border: 1px solid red;
+		}
+		.fanzhuan{
+			background: #ccc;
+		}
+		.last{
+			background: #eee;
+		}
+		.last1 div{
+			border: 1px solid red;
+			box-sizing: border-box;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid a">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-4 a1">A</div>
+				<div class="col-xs-12 col-md-8 a2">B</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+			<div class="row four">
+				<div class="col-xs-6 col-sm-3">A</div>
+				<div class="col-xs-6 col-sm-3">B</div>
+				<div class="col-xs-6 col-sm-3">C</div>
+				<div class="col-xs-6 col-sm-3">D</div>	
+			</div>
+	</div>
+
+
+	<div class="container-fluid users">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 user">A</div>
+				<div class="col-xs-12 col-sm-4 user">B</div>
+				<div class="col-xs-12 col-sm-4 user">C</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row tuila">
+			<div class="col-xs-12 col-sm-4">
+				<img src="https://code.visualstudio.com/assets/images/home-intellisense.svg" alt="">
+			</div>
+			<div class="col-xs-12 col-sm-offset-1 col-sm-7">
+				<h3>Meet IntelliSense.</h3>
+Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid fanzhuan">
+		<div class="container">
+			<div class="row tuila">
+					<div class="col-xs-12 col-sm-4 col-sm-push-8">
+						<img src="https://code.visualstudio.com/assets/images/home-intellisense.svg" alt="">
+					</div>
+					<div class="col-xs-12 col-sm-7 col-sm-pull-4">
+						<h3>MeetA IntelliSense.</h3>
+		Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container-fluid last">
+		<div class="container">
+			<div class="row last1">
+				<div class="col-xs-6 col-md-4 col-lg-3">A</div>
+				<div class="col-xs-6 col-md-4 col-lg-3 hidden-md">B</div>
+				<div class="col-xs-6 col-md-4 col-lg-3">C</div>
+				<div class="col-xs-6 col-md-4 col-lg-3">D</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

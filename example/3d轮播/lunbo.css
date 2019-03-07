@@ -1,0 +1,43 @@
+.jingshen{
+	width: 1000px;   height: 500px;
+	perspective: 2000px;
+	border:2px solid red;
+	/*position: relative;*/
+}
+.box{
+	position: relative;
+	top: 50%;    left: 0%;
+	animation: zhuan 15s linear 0s infinite;
+	transform-style:preserve-3d;
+}
+.jingshen .box img{
+	width: 400px;   height: 300px;
+	position: absolute;
+	top:50%; left:50%;
+}
+.box .img1{
+	transform: translate3d(-50%,-50%,0) rotate3d(0,1,0,72deg) translate3d(0,0,350px);
+}
+.box .img2{
+	transform: translate3d(-50%,-50%,0) rotate3d(0,1,0,144deg) translate3d(0,0,350px);
+}
+.box .img3{
+	transform: translate3d(-50%,-50%,0) rotate3d(0,1,0,216deg) translate3d(0,0,350px);
+}
+.box .img4{
+	transform: translate3d(-50%,-50%,0) rotate3d(0,1,0,288deg) translate3d(0,0,350px);
+}
+.box .img5{
+	transform: translate3d(-50%,-50%,0) rotate3d(0,1,0,360deg) translate3d(0,0,350px);
+}
+@keyframes zhuan{
+	0%{
+		transform:translate3d(0,0,-400px) rotate3d(0,1,0,0deg);
+	}
+	100%{
+		transform:translate3d(0,0,-400px) rotate3d(0,1,0,360deg);
+	}
+}
+.box:hover{
+	animation-play-state: paused;
+}
